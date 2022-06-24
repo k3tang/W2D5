@@ -18,6 +18,10 @@ h2 {
     list-style: "👉" inside;
 }
 
+.direction-list > li:nth-of-type(2n) {
+    background-color:rgb(190, 199, 207) ;
+}
+
 header > img {
     width: 100px;
 }
@@ -26,7 +30,7 @@ figure > img {
     width: 200px;
 }
 
-ul a {
+ul a, section a {
     text-decoration: none;
     color: inherit
 }
@@ -35,6 +39,42 @@ ul a {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 * {
     background-color: rgb(248, 237, 229);
 }
+
+input[type="radio"], #cooking-expertise, input[type="submit"] {
+    cursor: pointer;
+    outline: none
+
+}
+
+input:last-child {
+    background-color: gold
+}
+
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 27px;
+    height: 27px;
+    background-image: url(./stars.png);
+    vertical-align: bottom;
+}
+
+input[type="radio"]:hover {
+    background-position: 30px 60px;
+
+input[type="radio"]:checked {
+        background-position: 30px 30px;
+    }
+
+
+input:last-child {
+        background: gold;
+    }
+
+input:last-child:hover {
+        -webkit-filter: brightness(90%);
