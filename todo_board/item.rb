@@ -1,5 +1,5 @@
 class Item 
-
+    attr_reader :done
     attr_accessor :title, :deadline, :description
 
     def self.valid_date?(date_string)
@@ -16,7 +16,14 @@ class Item
                 raise ArgumentError.new "invalid date"
             end 
         @description = description
+        @done = false
     end
+
+    def toggle
+        if @done == false
+            @done = true 
+        end 
+    end 
 
     
 end 
